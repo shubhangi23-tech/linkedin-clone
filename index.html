@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin clone</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+<nav class="navbar">
+        <div class="navbar-left"></div>
+            <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png?20140125013055"width=60px></a>
+
+            <div class="search-box">
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4He1lsW77_fFmyeBdsAk6V8r0tNX2V8k35A&s" >
+                <input type="text" placeholder="search">
+
+            </div>
+        </div>
+<div class="navbar-center">
+       <ul>
+    <li>
+        <a href="#" class="active-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngrH8eyx_-ET3o8ffqU7hfYWDld7KUOfTVw&s"width=40px><span>Home</span></a>
+        </li>
+    <li>
+         <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_btGETvcVNuF7xkX3mZRhkWNIlhsi63dzTeR6coA6CPPVs53emCP7SYnKDR22AqZQ37M&usqp=CAU"width=40px ><span>My Network</span></a>
+        </li>
+    <li> 
+        <a href="#"><img src="https://e7.pngegg.com/pngimages/354/914/png-clipart-career-portfolio-portfolio-icon-cdr-angle-thumbnail.png"width=40px ><span>Jobs</span></a> 
+        <li>
+    <li>
+        <a href=""><img src="https://i.pinimg.com/736x/bc/9b/20/bc9b206f94a8a0421bc32b3c0b17811e.jpg"width=40 ><span>Messaging</span></a>
+        </li>
+    <li>
+         <a href=""><img src="https://w1.pngwing.com/pngs/930/970/png-transparent-notification-icon-ios-7-iphone-icon-design-zooming-user-interface-button-apple-push-notification-service-computer-software.png"width=40px ><span>notification</span></a>
+        </li>
+       </ul>
+</div>
+   <div class="navbar-right">
+      <div class="online">
+          <img src="
+          https://imgcdn.stablediffusionweb.com/2024/10/2/e422911e-e632-4a91-a4af-110348c278f4.jpg" class="nav-profile-img" onclick="toggleMenu()">
+     </div>
+   </div>
+
+<!-------navbar close----->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="main pic.jpg" >
+            <div>
+                <h3>Rayon Walton</h3>
+                <a href="profile.html">See your profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzjdWbROYYaDwe3fzdJ3_cHbI3KV4voucGbzNI_IDJV_pLqL7Quw3Kwc3v2i61bl9-u8&usqp=CAU" >
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="https://cdn-icons-png.freepik.com/256/900/900834.png?semt=ais_hybrid" >
+            <p>Setting & Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zp3GrG0t8_amuhk6mgn2_7Mbm--rJ3pg8481wlHtJCtgkLEvuE-pQxjWg5Va68_8Bfk&usqp=CAU">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Accessibility.svg/2048px-Accessibility.svg.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/713/709/non_2x/illustration-graphic-of-logout-icon-exit-icon-eps-free-vector.jpg" >
+            <p>Logout</p>
+            <span>></span>
+        </a>
+        
+    </div>
+</div>
+</nav>
+<div class="container">
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="cover pic 2.jpg" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="https://imgcdn.stablediffusionweb.com/2024/10/2/e422911e-e632-4a91-a4af-110348c278f4.jpg" >
+                <h1>Rayan Walton</h1>
+                <h3>Web Developer</h3>
+                <ul>
+                    <li>Your profile views<span>52</span></li>
+                    <li>Your post views<span>810</span></li>
+                    <li>Your connection<span>205</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img width="40px" src="WhatsApp Image 2024-12-30 at 10.34.57 AM.jpeg">My items</a>
+                <a href="#"><img width="50px" src="IMG_20241230_005258 (3).jpg" >Try Primium</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><img width="20px" src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >Web Development</a>
+            <a href="#"><img  width="20px"src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >User Interface</a>
+            <a href="#"><img  width="20px"src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >Online Learning</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >Learn Online</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >Code Better</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 10.51.12 AM.jpeg" >Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.03 AM.jpeg" >Web Design Group</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.03 AM.jpeg" >HTML & CSS Learners</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.03 AM.jpeg" > Python & JavaScript Group</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.03 AM.jpeg" >Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.45 AM.jpeg" >webdevelopment</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.45 AM.jpeg" >userinterferace</a>
+            <a href="#"><img  width="20px" src="WhatsApp Image 2024-12-30 at 11.25.45 AM.jpeg" >onlinelearning</a>
+            <div class="discover-more-link">
+                <a href="#">Discover more</a>
+            </div>
+
+            <p id="showMoreLink" onlick="toggleActivity()">Show More <b>+</b></p>
+
+        </div>
+     </div>
+<!------main content------->
+    <div class="main-content">
+        
+        <div class="create-post">
+            <div class="create-post-input">
+                <img  src="https://imgcdn.stablediffusionweb.com/2024/10/2/e422911e-e632-4a91-a4af-110348c278f4.jpg" >
+                <textarea rows="2" placeholder="Write a post"></textarea>
+
+            </div>
+            <div class="create-post-links">
+                <li><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Photos-512.png" >Photo</li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EHMiTP_N2WOEaItxqjPQUQGyWA-b1aHM4w&s" alt="">Video</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/006/692/012/non_2x/calendar-date-date-notes-business-office-event-icon-template-black-color-editable-calendar-date-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="">Event</li>
+                <li>Post</li>
+            </div>
+
+
+
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="https://cdn-icons-png.flaticon.com/512/156/156137.png" ></span></p>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCimmt5UhECwwzqQzB7G3gZLVkWgqgo_ELAw&s" > 
+                <div>
+                    <h1>Benjamin Leo</h1>
+                    <small>Founder at CEO at Microsoft | Angel Investor</small>
+                    <small>2 hours ago</small>
+    
+                </div>
+            </div>
+            <p>The success of every websites depend on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors. </p>
+            <img src="https://media.istockphoto.com/id/1409520341/photo/group-of-young-people-discussing-in-the-co-working-office.jpg?s=612x612&w=0&k=20&c=MMScAoIbvQebCJ3dhr8pZ1izzuWxW_pBJ4yJ1KQfwpM=" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Arvind Shukla and 78 others</span>
+                </div>
+                <div>
+                    <span>20 comments &middot; 43 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="post">
+            <div class="post-author">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmS8eh8IChvSMtnJaWl78bXqykPTTe-jJFw&s" >
+                <div>
+                    <h1>Gabrelia George</h1>
+                    <small>Software Engineer at Google| cyber security</small>
+                    <small>4 hours ago</small>
+    
+                </div>
+            </div>
+            <p>Exploring the evolving landscape of cyber threats and the innovative solutions to combat them.  </p>
+            <img src="https://static.toiimg.com/thumb/msid-83746509,width-400,resizemode-4/83746509.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" alt="">
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 15 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                   <img src="main pic.jpg" class="post-activity-user-icon"> 
+                   <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" alt="">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" alt="">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" alt="">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" alt="">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="post">
+            <div class="post-author">
+                <img src="https://plus.unsplash.com/premium_photo-1682093724360-5aee7f16c3db?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amFwYW5lc2UlMjBnaXJsfGVufDB8fDB8fHww" >
+                <div>
+                    <h1>Sakura</h1>
+                    <small>Founder at Yui cop op </small>
+                    <small>6 hours ago</small>
+    
+                </div>
+            </div>
+            <p>We're seeking a highly motivated to join our team. Apply now! </p>
+            <img src="post 2.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" alt="">
+                    <span class="liked-users"> Ayush Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>78 comments &middot; 90 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                   <img src="main pic.jpg" class="post-activity-user-icon"> 
+                   <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" alt="">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" alt="">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" alt="">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" alt="">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="post">
+            <div class="post-author">
+                <img src="https://thumbs.dreamstime.com/z/portrait-young-handsome-american-man-hot-summer-new-yor-wearing-white-v-neck-t-shirt-short-hair-91891020.jpg" >
+                <div>
+                    <h1>John Doe</h1>
+                    <small>Founder at CEO at Galleio | Angel Investor</small>
+                    <small>2 hours ago</small>
+    
+                </div>
+            </div>
+            <p>Embrace flexibility! We're hiring for a remote to join our growing team. Enjoy work-life balance with the freedom to work from anywhere. Apply today and experience the future of work. </p>
+            <img src="post 1.png" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" alt="">
+                    <span class="liked-users"> charli and 79 others</span>
+                </div>
+                <div>
+                    <span>13 comments &middot; 6 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                   <img src="main pic.jpg" class="post-activity-user-icon"> 
+                   <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="https://img.freepik.com/free-photo/smiling-girl-with-american-flag-tree_23-2147824398.jpg" >
+                <div>
+                    <h1>Eliana Christ</h1>
+                    <small>Founder at CEO at Galleio | Angel Investor</small>
+                    <small> 14 hours ago</small>
+    
+                </div>
+            </div>
+            <p>Pair your smile with a relevant professional update: "Smiling because I just closed a big deal!" or "Smiling after a successful presentation." </p>
+            <img src="post3.webp" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>40  comments &middot; 67 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="https://st2.depositphotos.com/32224188/45390/i/450/depositphotos_453909148-stock-photo-trendy-urban-style-black-african.jpg" >
+                <div>
+                    <h1>Alice Smith</h1>
+                    <small>Founder at Intel </small>
+                    <small> 7 hours ago</small>
+    
+                </div>
+            </div>
+            <p>We help businesses of all sizes achieve their marketing goals through innovative strategies and data-driven solutions. Let's grow your brand together." </p>
+            <img src="cor 3.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="https://img.freepik.com/premium-photo/beautiful-european-girl-19-years-old-posing_954932-2168.jpg?w=740" >
+                <div>
+                    <h1>Vish Keen</h1>
+                    <small>buisness |Marketing</small>
+                    <small>1  hours ago</small>
+    
+                </div>
+            </div>
+            <p>Include a strong call to action: "Visit our website," "Contact us today," "Schedule a consultation" </p>
+            <img src="corporate.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="https://c8.alamy.com/comp/2BNB4E2/happy-sexy-american-girl-beauty-glamour-model-woman-smiling-2BNB4E2.jpg" >
+                <div>
+                    <h1>Dayna Rusk</h1>
+                    <small>Student| learning</small>
+                    <small>2 hours ago</small>
+    
+                </div>
+            </div>
+            <p>The success of every websites depend on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors. </p>
+            <img src="corporate 2.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>2 comments &middot; 15 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="post">
+            <div class="post-author">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2440478803/display_1500/stock-photo-handsome-indian-young-man-posing-for-photograph-outdoors-2440478803.jpg" >
+                <div>
+                    <h1>Rishi Sahani</h1>
+                    <small>Founder at CEO at Galleio | Angel Investor</small>
+                    <small>2 hours ago</small>
+    
+                </div>
+            </div>
+            <p>The success of every websites depend on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors. </p>
+            <img src="certicate 2.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-author">
+                <img src="https://www.shutterstock.com/image-photo/close-head-shot-portrait-preppy-260nw-1433809418.jpg" >
+                <div>
+                    <h1>Drishti Awasthi</h1>
+                    <small>Founder at Meta| Investor</small>
+                    <small>8 hours ago</small>
+    
+                </div>
+            </div>
+            <p>"Find your passion and pursue it with dedication." </p>
+            <img src="post 4.jpg" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">"> Liza and 75 others</span>
+                </div>
+                <div>
+                    <span> 56 comments &middot; 7 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="https://st2.depositphotos.com/4046139/7954/i/450/depositphotos_79545232-stock-photo-mature-african-american-man.jpg" >
+                <div>
+                    <h1>Christopher Kale</h1>
+                    <small>Software Developer | Angel Investor</small>
+                    <small>2 hours ago</small>
+    
+                </div>
+            </div>
+            <p>The success of every websites depend on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors. </p>
+            <img src="certicate.webp" width="100%">
+    
+    
+            <div class="post-stats">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgiSXzA216_jd6SJdBlOmTDo8PRLZw97KbA&s" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926585.png" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png" >
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="main pic.jpg" class="post-activity-user-icon">
+                    <img src="down triangle.webp" class="post-activity-arrow-icon">
+                </div>
+                
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1616/1616567.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://cdn-icons-png.freepik.com/256/16242/16242323.png?semt=ais_hybrid" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://d11a6trkgmumsb.cloudfront.net/original/4X/d/a/1/da1862dd405badf6f528248b6a0e020aae8471a1.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/non_2x/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    </div>
+
+    
+    <!-----right sidebar---------->
+
+
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot;10,934 readers </span>
+
+            <a href="#">Career growing horizantallyr</a>
+            <span>19h ago &middot;1,552 readers </span>
+
+            <a href="#">Less work visa for US, more for UK </a>
+            <span>1d ago &middot;27,290 readers </span>
+
+            <a href="#">More hiring=higher confidence?</a>
+            <span>18h ago &middot;8,208 readers </span>
+
+            <a href="#">Gautam Adani is the world's third richest </a>
+            <span>12h ago &middot;4,205 readers </span>
+
+            <a href="#" class="read-more-link">Read More</a>
+            
+        </div>
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 principles of web design</p>
+            <div>
+                <img src="https://imgcdn.stablediffusionweb.com/2024/10/2/e422911e-e632-4a91-a4af-110348c278f4.jpg" >
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/xiaomi-mi-logo-icon.png" >
+            </div>
+            <b>Brand and Demand in Xiomi</b>
+            <a href="#" class="ad-link">Learn More</a>
+    
+        </div>
+    
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibilty</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Get the app</a>
+            <a href="#">More</a>
+            <div class="copyright-msg">
+                <img src="linkedin logo.png" >
+                <p>Linkedup &#169; 2022. All right reserved</p>
+            </div>
+    
+           
+            
+        </div>
+    </div>
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+</script>
+
+<script>
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less <b>-</b>";
+        
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+
+
+</script>
+
+</div>  
+</body>
+</html>
